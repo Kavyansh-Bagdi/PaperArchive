@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block header %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="button">
+        <form action="" method="post" >
+            <label for="coursename">Deparment Name</label>
+            <select name="course_name" id="coursename">
+                {% for branch in engineering_branches %}
+                <option value={{branch}}>{{branch}}</option>
+                {% endfor %}
+            </select> 
+            |
+            <label for="code">Course Code</label>
+            <select name="course_code" id="code">
+                {% for code in course_codes %}
+                <option value={{code}}>{{code}}</option>
+                {% endfor %}
+            </select>
+            |
+            <label for="studentyear">Course Year</label>
+            <select name="year" id="studentyear">
+                {% for year in range(1,5) %}
+                    <option value={{year}}>{{year}} year</option>
+                {% endfor %}
+            </select>
+            |
+            <button class="Search" type="submit">Search</button>
+        </form>
+    </div>
+    <table>
+        <tr>
+            <th>S.no.</th>
+            <th>Deparment Name</th>
+            <th>Course Code</th>
+            <th>College Year</th>
+            <th>Year</th>
+            <th>Download Link</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Computer Science Engineering</td>
+            <td>22CST101</td>
+            <td>1</td>
+            <td>2023</td>
+            <td><a href="/">Download</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Computer Science Engineering</td>
+            <td>22CST101</td>
+            <td>1</td>
+
+            <td>2023</td>
+            <td><a href="/">Download</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Computer Science Engineering</td>
+            <td>22CST101</td>
+            <td>1</td>
+
+            <td>2023</td>
+            <td><a href="/">Download</a></td>
+        </tr>
+    </table>
+{% endblock %}

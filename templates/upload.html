@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Upload{% endblock %}
+{% block header %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        <label for="file">Upload File : </label>
+        <input type="file" id="file">
+    </form>
+{% endblock %}

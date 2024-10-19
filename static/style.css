@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Arial;
+    font-weight:400;
+    letter-spacing:normal;
+    user-select: none;
+    -moz-window-dragging: none;
+
+}
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+select{
+    padding: 0.5rem;
+}
+option{
+    padding: 0.5rem;
+    border-radius: 0;
+}
+select:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: underline;
+    color: blue;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    margin: 1rem;
+}
+header li{
+    list-style: none;
+    margin: 0.5rem;
+}
+.img{
+    margin: 0.5rem;
+    margin-top: 3rem;
+}
+.img img{
+    height: 256px;
+    max-height: 20vh;
+}
