@@ -7,6 +7,9 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+body{
+    min-height: 150vh;
+}
 .Search:hover{
     cursor: pointer;
     background-color: blue;

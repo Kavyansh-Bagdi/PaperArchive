@@ -1,0 +1,36 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    row-gap: 0.75em;
+    width: 70vw;
+}
+input,select{
+    width: 100%;
+}
+h2{
+    margin-block: 2em;
+    font-weight: 600;
+}
+label{
+    font-weight: 600;
+}
+hr{
+    width: 100%;
+    color: #ddd;
+}
+button{
+    background-color: royalblue;
+    padding: 0.60rem;
+    padding-inline: 1rem;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: blue;
+}

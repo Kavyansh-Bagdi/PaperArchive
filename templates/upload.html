@@ -1,12 +1,42 @@
 {% extends 'base.html' %}
 {% block title %}Upload{% endblock %}
 {% block header %} 
-    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
 {% endblock %}
 
 {% block content %}
+    <h2>Upload Previous Year Question Papers</h2>
     <form action="" method="post">
+
+        <label for="branch">Branch</label>
+        <select name="branch" id="branch" required>
+            {% for i in branch %}
+                <option value={{i}}>{{i}}</option>
+            {% endfor %}
+        </select>
+
+        <label for="sem">Semester</label>
+        <select name="sem" id="sem" required>
+            {% for i in range(8) %}
+                <option value={{i}}>{{sem[i]}}</option>
+            {% endfor %}
+        </select>
+
+        <label for="year">Year</label>
+        <select name="year" id="year" required>
+            {% for i in y %}
+                <option value={{i}}>{{i}}</option>
+            {% endfor %}
+        </select>
+        <label for="exam">Exam</label>
+        <select name="exam" id="exam" required>
+            <option value="Mid-Term">Mid-Term</option>
+            <option value="End-Term">End-Term</option>
+        </select>
+
         <label for="file">Upload File : </label>
         <input type="file" id="file">
+        <hr>
+        <button type="submit">Submit</button>
     </form>
 {% endblock %}

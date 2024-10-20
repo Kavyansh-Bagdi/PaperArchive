@@ -14,13 +14,6 @@
                 {% endfor %}
             </select> 
             |
-            <label for="code">Course Code</label>
-            <select name="course_code" id="code">
-                {% for code in course_codes %}
-                <option value={{code}}>{{code}}</option>
-                {% endfor %}
-            </select>
-            |
             <label for="studentyear">Course Year</label>
             <select name="year" id="studentyear">
                 {% for year in range(1,5) %}
@@ -31,11 +24,10 @@
             <button class="Search" type="submit">Search</button>
         </form>
     </div>
-    <table>
+        <table>
         <tr>
             <th>S.no.</th>
             <th>Deparment Name</th>
-            <th>Course Code</th>
             <th>College Year</th>
             <th>Year</th>
             <th>Download Link</th>
@@ -43,7 +35,6 @@
         <tr>
             <td>1</td>
             <td>Computer Science Engineering</td>
-            <td>22CST101</td>
             <td>1</td>
             <td>2023</td>
             <td><a href="/">Download</a></td>
@@ -51,20 +42,17 @@
         <tr>
             <td>1</td>
             <td>Computer Science Engineering</td>
-            <td>22CST101</td>
             <td>1</td>
-
             <td>2023</td>
             <td><a href="/">Download</a></td>
         </tr>
         <tr>
             <td>1</td>
             <td>Computer Science Engineering</td>
-            <td>22CST101</td>
             <td>1</td>
-
             <td>2023</td>
             <td><a href="/">Download</a></td>
         </tr>
     </table>
+    </div>
 {% endblock %}
